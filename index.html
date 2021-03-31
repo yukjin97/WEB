@@ -5,10 +5,34 @@
   <title>WEB STUDY</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="naver_linkcolor.css">
+  <style>
+    #centerbutton
+    {
+    margin:0%;
+    padding-bottom: 30px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    }
+  </style>
+
 </head>
 
 <body>
   <h1><a href="index.html"style="color:red">WEB</a></h1>
+  <div id="centerbutton">
+    <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color='white';
+    ">
+
+
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color='black';
+    ">
+  </div>
+
 <div id="grid">
   <ul>
     <a href="1.html"><li><strong>HTML</strong></li></a><br>
